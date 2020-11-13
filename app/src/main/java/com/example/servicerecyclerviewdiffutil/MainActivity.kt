@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                     1 -> adapter.deleteElement(adapter.data.size - 1)
                     2 -> {
                         adapter.data[randomPosition].value = randomValue
-                        adapter.notifyItemChanged(randomPosition)
+                        adapter.notifyItemChanged(randomPosition,"KEY_UPDATE")
                     }
 
                 }
